@@ -1,0 +1,30 @@
+{
+  "name": "meu-dinheiro",
+  "version": "1.0.0",
+  "description": "Aplicativo meu dinheiro",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AndreVeiga/meu-dinheiro.git"
+  },
+  "keywords": [
+    "App",
+    "meu",
+    "dinheiro",
+    "AndreVeiga"
+  ],
+  "author": "Andre Veiga",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AndreVeiga/meu-dinheiro/issues"
+  },
+  "homepage": "https://github.com/AndreVeiga/meu-dinheiro#readme",
+  "dependencies": {
+    "ejs": "^2.5.6",
+    "express": "^4.15.3"
+  }
+}

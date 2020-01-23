@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <% include Config/head %>
+    <link rel="stylesheet" href="/css/calculadora.css">
+    <body>
+        <% include Components/header %>
+        <form method='GET' class='calculadora-form'>
+            <fieldset>
+                <label for='valorInicial'>Valor inicial:</label> 
+                <input id='valorInicial' type='text' name='valorInicial'/>
+            </fieldset>
+            <fieldset>
+                <label for="taxa">Taxa a.m.:</label>
+                <input id='taxa' type='text' name='taxa'/>
+            </fieldset>
+            <fieldset>
+                <label for="tempo">Quantos meses:</label>
+                <input type='text' name='tempo'/>
+            </fieldset>
+            
+            <button type='submit'>Calcular</button>
+        </form>
+
+        <% if(resultado.calculado) { %>
+        <h2>R$ <%= resultado.total %></h2>
+        <% } %>
+    </body>
+</html>
