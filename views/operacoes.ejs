@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+    <% include Config/head %>
+    <body>
+        <% include Components/header %>
+        <h2>Operações</h2>
+        <% operacoes.forEach( operacao => { %>
+        <p><%= operacao.descricao %> R$ <%= operacao.valor %></p> 
+        <% })%>
+    </body>
+</html>
